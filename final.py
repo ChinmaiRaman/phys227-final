@@ -223,7 +223,7 @@ def plotmaxima(dim):
     """
     plots local maxima of x,y, or z vs c
     """
-    c_values = np.linspace(2, 6, 201)
+    c_values = np.linspace(2, 6, 41)
     var = [findmaxima(c, dim)[-17:] for c in c_values]
     fig = plt.figure(1)
     plt.plot(c_values, [elem for elem in var], 'b-')
